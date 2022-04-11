@@ -7,15 +7,14 @@ New commers often get desoriented over what GNU/Linux distribution they want to 
 For now this project is not finished so no binary can be download from the release tab.
 #### Linux
 download binary then run:
-sudo ./install.sh
-distrochooser
+    sudo ./install.sh
+    distrochooser
 for uninstalling run:
-sudo ./uninstall.sh
+    sudo ./uninstall.sh
 #### Windows
 download binary then run
 
 ## Build from source
-```git clone https://github.com/RunaAM/DistroChooser
-cd DistroChooser
-make
-```
+    git clone https://github.com/RunaAM/DistroChooser
+    cd DistroChooser
+    make
