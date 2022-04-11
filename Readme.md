@@ -4,6 +4,7 @@
 <img src="https://img.shields.io/badge/os-mac-brightgreen">
 <img src="https://img.shields.io/badge/os-windows-brightgreen">
 </p>
+
 # Introduction
 New commers often get desoriented over what GNU/Linux distribution they want to use. This program is just for that
 
