@@ -13,3 +13,7 @@ out/quiz.o: src/quiz.cpp src/quiz.h
 .PHONY: clean
 clean:
 	rm -f out/*.o main
+
+.PHONY:gitpush
+gitpush:
+	git add . && git commit -m "testing features" && git push -u origin main
