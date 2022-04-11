@@ -48,18 +48,20 @@ int main(){
             f >> s;
         }
         while(std::getline(f,s)){
-        f >> distro.name;
-        f >> distro.based;
-        f >> buffer;
-        if(buffer == short_answer::yes){
-            distro.user_friendly = "very user-friendly";
-        }
-        else{
-            distro.user_friendly = "not so user-friendly";
-        }
-        std::cout<< distro.name <<std::endl;
-        std::cout<< distro.based <<std::endl;
-        std::cout<< distro.user_friendly <<std::endl;
+            f >> distro.name;
+            f >> distro.based;
+            f >> buffer;
+            std::cout << buffer << std::endl;
+            if(buffer == short_answer::yes){
+                distro.user_friendly = "very user-friendly";
+            }
+            else{
+                distro.user_friendly = "not so user-friendly";
+            }
+            if(buffer == user.beginner_friendly){
+                   
+                std::cout<< distro.name <<" "<< distro.based << " "<< distro.user_friendly <<std::endl;
+            }
         }
     }
     
