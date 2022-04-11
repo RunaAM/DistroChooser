@@ -23,7 +23,8 @@ download binary then run
 
 ## Build from source
 Run these commands in a terminal
-```git clone https://github.com/RunaAM/DistroChooser
+```
+git clone https://github.com/RunaAM/DistroChooser
 cd DistroChooser
 make
 ```
