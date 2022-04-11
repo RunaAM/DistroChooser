@@ -53,5 +53,6 @@ int main(){
         }
     }
     quiz(user);
+    std::cout << user.release<<std::endl;
     return 0;
 }

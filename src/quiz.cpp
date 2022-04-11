@@ -54,7 +54,6 @@ void quiz(user &user){
         }
     }
     loop = true;
-    loop = true;
     while(loop){
         std::cout << "IV.What desktop experiece are you expecting from your distro?"<<std::endl;
         std::cout << "1.A fluid one with animations and unique features" <<std::endl;
@@ -76,11 +75,11 @@ void quiz(user &user){
         std::cout << "V.What design your desktop should have?" << std::endl;
         std::cout << "1.A windows like design."<< std::endl;
         std::cout << "2.A macos like design."<< std::endl;
-        std::cout << "2.I don\'t really care" << std::endl;
+        std::cout << "3.I don\'t really care" << std::endl;
         std::cout << waiting_message;
         std::cin >> choice;
         if(choice >0 && choice <4){
-            user.beginner_friendly = choice;
+            user.desktop_design = choice;
             loop = false;
         }
         else{
