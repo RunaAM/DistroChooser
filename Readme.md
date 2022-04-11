@@ -15,6 +15,7 @@ sudo ./uninstall.sh
 download binary then run
 
 ## Build from source
-git clone https://github.com/RunaAM/DistroChooser
+```git clone https://github.com/RunaAM/DistroChooser
 cd DistroChooser
 make
+```
