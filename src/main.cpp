@@ -1,33 +1,19 @@
 #include <iostream>
 #include <string>
+#include <fstream>
 #include "quiz.h"
 using std::string;
+
 struct distro{
     string name;
     string based;
     string desktop;
-    string personalized;
     string user_friendly;
 };
 
 
 int main(){
-    /*ifstream f;
-    f.open("distrodatabase.txt",ios::in);
-    if(f.is_open()){
-        string s;
-        distro distro;
-        getline(f,s);
-        while(getline(f,s)){
-            distro.name = s.substr(0,s.find(' '));
-            distro.based = s.substr(1,s.find(' '));
-            distro.desktop = s.substr(2,s.find(' '));
-            distro.personalized = s.substr(3,s.find(' '));
-            distro.user_friendly = s.substr(4,s.find(' '));
-            cout << distro.based << endl;
-        }
-    }
-    */
+    
     user user;
     
     bool loop;
@@ -53,6 +39,29 @@ int main(){
         }
     }
     quiz(user);
-    std::cout << user.release<<std::endl;
+    std::ifstream f{"/etc/distrochooserdatabase"};
+    if(f.is_open()){
+        string s;
+        distro distro;
+        short buffer;
+        for(int i = 0;i<8;i++){
+            f >> s;
+        }
+        while(std::getline(f,s)){
+        f >> distro.name;
+        f >> distro.based;
+        f >> buffer;
+        if(buffer == short_answer::yes){
+            distro.user_friendly = "very user-friendly";
+        }
+        else{
+            distro.user_friendly = "not so user-friendly";
+        }
+        std::cout<< distro.name <<std::endl;
+        std::cout<< distro.based <<std::endl;
+        std::cout<< distro.user_friendly <<std::endl;
+        }
+    }
+    
     return 0;
 }

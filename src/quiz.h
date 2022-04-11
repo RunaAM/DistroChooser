@@ -8,15 +8,10 @@ struct user{
     short desktop_experience;
     short desktop_design;
 };
-enum release{
-    stable=1, release
-};
-enum begginer_friendly{
-    yes=1,maybe,no
-};
-enum out_the_box{
+enum short_answer{
     yes=1,no
 };
+
 enum dektop_experience{
     fluid=1,snappy
 };
