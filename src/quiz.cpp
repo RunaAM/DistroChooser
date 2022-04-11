@@ -54,6 +54,7 @@ void quiz(user &user){
         }
     }
     loop = true;
+    loop = true;
     while(loop){
         std::cout << "IV.What desktop experiece are you expecting from your distro?"<<std::endl;
         std::cout << "1.A fluid one with animations and unique features" <<std::endl;
