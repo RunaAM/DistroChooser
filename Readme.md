@@ -1,2 +1,20 @@
-![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/RunaAM/DistroChooser?label=Size)
-![Lines of code](https://img.shields.io/tokei/lines/github/RunaAM/DistroChooser?label=lines%20of%20code)
+# Introduction
+New commers often get desoriented over what GNU/Linux distribution they want to use. This program is just for that
+
+# Instalation
+
+## Binary
+For now this project is not finished so no binary can be download from the release tab.
+#### Linux
+download binary then run:
+sudo ./install.sh
+distrochooser
+for uninstalling run:
+sudo ./uninstall.sh
+#### Windows
+download binary then run
+
+## Build from source
+git clone https://github.com/RunaAM/DistroChooser
+cd DistroChooser
+make
