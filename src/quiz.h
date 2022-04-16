@@ -12,11 +12,11 @@ enum short_answer{
     yes=1,no
 };
 
-enum dektop_experience{
+enum desktop_experience{
     fluid=1,snappy
 };
 enum desktop_design{
-    windows=1,macos,dont_care
+    dont_care,windows,macos
 };
 void quiz(user &user);
 

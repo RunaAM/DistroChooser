@@ -1,9 +1,9 @@
 Distro     based beginner_friendly release out_of_box desktop_design desktop_experience desktop
-Ubuntu     Debian         1           1         1            2               2           GNOME
+Ubuntu     Debian         1           1         1            2               1           GNOME
 Linux_mint Ubuntu         1           1         1            1               1           Cinnamon
 LMDE       Debian         1           1         1            1               1           Cinnamon
 Manjaro    Arch           1           2         2            1               1           KDE
-Arch       Arch           3           2         2            1               1           NONE
-Gentoo     Gentoo         3           2         2            1               1           NONE 
+Arch       Arch           3           2         2            0               2           NONE
+Gentoo     Gentoo         3           2         2            0               2           NONE 
 
  
