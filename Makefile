@@ -18,4 +18,4 @@ clean:
 
 .PHONY:gitpush
 gitpush:
-	git add . && git commit -m "testing features" && git push -u origin main
+	git add . &&git status > out/gitstatus.txt && git commit -m "testing features" && git push -u origin main

@@ -50,13 +50,7 @@ int main(){
             f >> s;
         }
         while(std::getline(f,s)){
-            f >> distro.name;
-            f >> distro.based;
-            f >> user_friendly_buffer;
-            f >> release_buffer;
-            f >> ootb_buffer;
-            f >> desktop_design_buffer;
-            f >> desktop_experience_buffer;
+            f >> distro.name >> distro.based >> user_friendly_buffer >> release_buffer >> ootb_buffer >> desktop_design_buffer >> desktop_experience_buffer >> distro.desktop;
             distro.user_friendly =(user_friendly_buffer == short_answer::yes) ? "very_user-friendly" : "not_so_user-friendly";
             distro.release = (release_buffer == short_answer::yes) ? "stable_release" : "rolling_release";
             distro.ootb = (ootb_buffer == short_answer::yes) ? "out_of_the_box" : "configure_before_use";
@@ -64,7 +58,7 @@ int main(){
             distro.desktop_experience = (desktop_experience_buffer == desktop_experience::fluid) ? "Modern_design" : "Older_design";
             if(user_friendly_buffer == user.beginner_friendly&& release_buffer == user.release && ootb_buffer == user.want_to_configure && desktop_design_buffer == user.desktop_design){
                    
-                std::cout<< distro.name <<" "<< distro.based << " "<< distro.user_friendly << " " << distro.release <<std::endl;
+                std::cout<< distro.name <<" "<< distro.based << " "<< distro.user_friendly << " " << distro.release << " " << distro.desktop << std::endl;
             }
         }
     }
